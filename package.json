@@ -26,7 +26,6 @@
     "test": "react-scripts test --silent",
     "test:watch": "npm test -- --watch",
     "test:coverage": "npm test -- --coverage --watchAll",
-    "deploy": "firebase deploy",
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
     "format": "prettier --write \"**/*.+(ts|tsx|js|json|css)\""
@@ -68,7 +67,6 @@
   "devDependencies": {
     "@testing-library/react-hooks": "^7.0.2",
     "@types/styled-components": "^5.1.23",
-    "firebase-tools": "^10.2.1",
     "prettier": "^2.5.1"
   }
 }
