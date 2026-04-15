@@ -14,7 +14,7 @@ const useCartTotal = () => {
     );
 
     const totalPrice = products.reduce((sum: number, product: ICartProduct) => {
-      sum += product.price;
+      sum += product.price * product.quantity;
       return sum;
     }, 0);
 
