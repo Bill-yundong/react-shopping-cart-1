@@ -11,7 +11,9 @@ const CartProducts = ({ products }: IProps) => {
   return (
     <S.Container>
       {products?.length ? (
-        products.map((p) => <CartProduct product={p} key={p.sku} />)
+        <S.CartProductsEmpty>
+          Unable to load cart items
+        </S.CartProductsEmpty>
       ) : (
         <S.CartProductsEmpty>
           Add some products in the cart <br />

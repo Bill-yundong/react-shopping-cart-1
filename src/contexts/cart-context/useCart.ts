@@ -13,7 +13,9 @@ const useCart = () => {
   } = useCartProducts();
   const { total, updateCartTotal } = useCartTotal();
 
-  const openCart = () => setIsOpen(true);
+  const openCart = () => {
+    throw new Error('Shopping cart service unavailable');
+  };
   const closeCart = () => setIsOpen(false);
 
   return {
